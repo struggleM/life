@@ -1,0 +1,148 @@
+body{
+	font-family: Helvetica;
+}
+a,
+input,
+button{
+	-webkit-tap-height-color:rgba(0,0,0,0);
+}
+body *{
+	-webkit-text-size-adjust: 100%;
+}
+input,
+button{
+	margin: 0;
+	padding: 0;
+	-webkit-appearance: none;
+	border-redius: 0;
+}
+a{
+	text-decoration: none;
+}
+body,
+h1,
+h2,
+p{
+	margin: 0;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+img{
+	vertical-align: top;
+	border: none;
+}
+#nav{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.logo{
+
+}
+.tabPic{
+	position: relative;
+	width: 1348px;
+	height: 674px;
+	overflow: hidden;
+	input{
+		display: none;
+	}
+	label{
+	position: absolute;
+	bottom: 20px;
+	width: 6px;
+	height: 6px;
+	z-index: 5;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, .3);
+	}
+}
+.tabPic input:checked+label {
+  background: #fff;
+}
+.tabPic label:nth-of-type(1) {
+	left: 49%;
+}
+.tabPic label:nth-of-type(2) {
+	left: 50%;
+}
+.tabPic label:nth-of-type(3) {
+	left: 51%;
+}
+.tabPic label:nth-of-type(4) {
+	left: 52%;
+}
+.list{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 400%;
+	z-index: 1;
+	transition: .5s;
+	li{
+		width: 25%;
+		float: left;
+		img{
+			width: 100%;
+			height: 674px;
+		}
+	}
+}
+.tabPic input:nth-of-type(1):checked ~ul {
+	left: 0;
+}
+.tabPic input:nth-of-type(2):checked ~ul {
+	left: -100%;
+}
+.tabPic input:nth-of-type(3):checked ~ul {
+	left: -200%;
+}
+.tabPic input:nth-of-type(4):checked ~ul {
+	left: -300%;
+}
+.Atltel{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	height: 674px;
+	max-width: 700px;
+	background: linear-gradient(to left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.80) 100%);
+}
+.contatin{
+	color: #fff;
+	padding: 132px 51px 140px 51px;
+	.title{
+		font: bold 16px/1 Arial;
+	}
+	.anthor{
+		padding-top: 26px;
+		font: bold 44px/54px Georgia;
+		a{
+			color: #fff;
+			&:hover{
+				 text-decoration: underline;
+			}
+		}
+	}
+}
+.contatin .webb{
+	padding: 26px 0 26px 0;
+	font: bold 16px/23px Arial;
+	max-width: 500px;
+}
+.contatin .story{
+	font: bold 12px/1 Arial;
+	padding: 14px 22px 12px 22px;
+	border: 1px solid #97999a;
+	a{
+		color: #fff;
+	}
+}
+.story:hover{
+	border: 1px solid #fff;
+}
